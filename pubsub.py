@@ -11,7 +11,7 @@
 # Licence:      MIT License
 #==============================================================================
 
-from Queue import Queue as queue
+from six.moves.queue import Queue as queue
 from threading import Lock as lock
 from functools import partial
 
@@ -100,8 +100,8 @@ def publish(channel, data):
             count[channel] = (count[channel] + 1) % MAX_ID
         count_lock.release()
     else:
-        count[channel] = 0L
-    
+        count[channel] = 0
+
     # ID of current message
     _id = count[channel]
     

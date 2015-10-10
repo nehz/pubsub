@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='pubsub',
     version='0.1.1',
     description='Simple Python PubSub',
     author='Zhen Wang',
-    author_email='ichigo.san@gmail.com',
-    url='https://bitbucket.org/nehz/pubsub',
+    author_email='mail@zhenwang.info',
+    url='https://github.com/nehz/pubsub',
     py_modules=['pubsub'],
+    install_requires=[
+        'six >= 1, < 2',
+    ],
 )
