@@ -1,2 +1,4 @@
 .hg/
 .hg*
+*.pyc
+pubsub.egg-info/
