@@ -2,3 +2,4 @@
 .hg*
 *.pyc
 pubsub.egg-info/
+dist/
