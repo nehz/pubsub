@@ -2,19 +2,21 @@ Usage
 =====
 
     import pubsub
-    
+
     channel = pubsub.subscribe('channel')
     pubsub.publish('channel', 'hello world')
     channel.listen().next()    
     channel.unsubscribe()
 
-    
+
 Changelog
 ==========
-* 0.1.1: 
+* 0.1.2:
+    * Updated to support Python 3
+* 0.1.1:
     * Added channel unsubscribe helper: channel.unsubscribe()
     * Each published message now has a unique incrementing ID
-        
+
 The MIT License
 ===============
 

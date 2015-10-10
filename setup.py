@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='pubsub',
-    version='0.1.1',
+    version='0.1.2',
     description='Simple Python PubSub',
     author='Zhen Wang',
     author_email='mail@zhenwang.info',
