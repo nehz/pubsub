@@ -17,6 +17,14 @@ Changelog
     * Added channel unsubscribe helper: channel.unsubscribe()
     * Each published message now has a unique incrementing ID
 
+
+Build status
+============
+[![Build status][ci-image]][ci-url]
+[ci-image]: https://travis-ci.org/nehz/pubsub.png?branch=master
+[ci-url]: https://travis-ci.org/nehz/pubsub
+
+
 The MIT License
 ===============
 
