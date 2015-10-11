@@ -21,7 +21,7 @@ Changelog
 Build status
 ============
 [![Build status][ci-image]][ci-url]
-[ci-image]: https://travis-ci.org/nehz/pubsub.png?branch=master
+[ci-image]: https://travis-ci.org/nehz/pubsub.png
 [ci-url]: https://travis-ci.org/nehz/pubsub
 
 
