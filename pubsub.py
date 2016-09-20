@@ -30,13 +30,10 @@ class UnsubscribeException(Exception):
 def subscribe(channel):
     if not channel:
         raise ValueError('channel')
-
+    channels_lock.acquire()
     if channel not in channels:
-        channels_lock.acquire()
-        # Need to check again
-        if channel not in channels:
-            channels[channel] = []
-        channels_lock.release()
+        channels[channel] = []
+    channels_lock.release()    
 
     msg_q = queue()
     channels[channel].append(msg_q)
